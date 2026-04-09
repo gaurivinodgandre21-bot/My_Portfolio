@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    height:100vh;
+    background-image: url("images/background2.jpeg") ;
+    background-size: cover;
+    background-position: center;
+    padding: 90px 100px 90px 100px;
+}
+.container {
+    position:relative;
+    height:100%;
+    background-color:rgba(255, 255, 255, .1) ;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px) ;
+    transform: scale(0);
+    animation:zoom-in 1s ease forwards;
+}
+
+@keyframes zoom-in {
+    100% {
+        transform: scale(1);
+    }
+}
+header {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 25px 5%;
+    display:flex ;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 100;
+}
+
+.logo {
+    font-size:25px;
+    color:#fff;
+    text-decoration: none;
+    font-weight:600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent; 
+}
+.navbar a:hover,
+.navbar a.active {
+    border-color: #fff;
+}
+
+#home{
+    display:flex;
+    align-items: center;
+    height:100%;
+    gap:50px;
+    padding: 50px 5% 0;
+    color: #fff;
+    animation-delay: 1.5s;
+}
+.home-detail h1 {
+    font-size:55px;
+    line-height: 1;
+}
+.home-detail h2 {
+    font-size:32px; 
+}
+.home-detail h4 {
+    margin: 10px 0 20px;
+}
+.home-detail img {
+    filter: invert(1);
+}
+#ink:hover{
+    background-color: rgb(165, 173, 18);
+}
+
+.home-img .img-box {
+    position:relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #fff;
+    overflow : hidden;
+}
+
+
+.home-img .img-box img {
+    position: absolute;
+    top:5px;
+    bottom: 0.01em;;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+#education{
+    display:flex;
+    align-items: center;
+    height:100%;
+    gap:50px;
+    padding: 50px 5% 0;
+    color: #fff;
+    animation-delay: 1.5s;
+}
+#education img {
+    filter: invert(1);
+}
+
+#skills{
+    display:flex;
+    align-items: center;
+    height:100%;
+    gap:50px;
+    padding: 50px 5% 0;
+    color: #fff;
+    animation-delay: 1.5s;
+    line-height: 1;
+}
+
+#projects{
+    display:flex;
+    align-items: center;
+    height:100%;
+    gap:50px;
+    padding: 50px 5% 0;
+    color: #fff;
+    animation-delay: 1.5s;
+    line-height: 1;
+}
+
+#cc{
+    display:flex;
+    align-items: center;
+    height:100%;
+    gap:50px;
+    padding: 50px 5% 0;
+    color: #fff;
+    animation-delay: 1.5s;
+    line-height: 1;
+}
+#cc img{
+    filter: invert(1);
+}
+#cc img:hover,
+#cc img:active{
+    background-color: rgb(165, 173, 18);
+}
+
+#other_acti{
+    display:flex;
+    align-items: center;
+    height:100%;
+    gap:50px;
+    padding: 50px 5% 0;
+    color: #fff;
+    animation-delay: 1.5s;
+    line-height: 1;
+}
+#other_acti img {
+    filter: invert(1);
+}
+
+.heading{
+    font-size:55px;
+    line-height: 1;
+}
+
+.content{
+    line-height: 40px;
+    font-size: 20px;
+}
+
